@@ -15,8 +15,8 @@ pipeline {
         label "master"
       }
       steps {
-        echo "euroStocksAddVehicleBackend_1587 Execution Started!!"
-        bat 'euroStocksAddVehicleBackend_1587.bat'
+        echo "directAutosLogin_1748  Execution Started!!"
+        bat 'directAutosLogin_1748.bat'
       }
     }
 
@@ -42,30 +42,9 @@ pipeline {
             bat 'euroStocksLoginForgot_1567.bat'
           }
         }
-        stage('Test On Windows : euroStocksAddProductBackend_1586') {
-          agent {
-            label "Windows_Node"
-          }
-          steps {
-            echo "euroStocksAddProductBackend_1586 Execution Started!!"
-            bat 'euroStocksAddProductBackend_1586.bat'
-          }
-
-        }
-        stage('Test On Master: euroStocksAddVehicleBackend_1587') {
-          agent {
-            label "master"
-          }
-          steps {
-            echo "euroStocksAddVehicleBackend_1587 Execution Started!!"
-            bat 'euroStocksAddVehicleBackend_1587.bat'
-          }
-        }
-
       }
     }
   }
-
   post {
     always {
       echo 'This will always run'
