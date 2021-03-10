@@ -4,7 +4,7 @@ pipeline {
     stage('Chekout') {
       steps {
         echo "Compile !!"
-        git credentialsId: '405a5c29-391f-4b1d-8e07-7191903e5d16', url: 'https://github.com/gtlniravpatel/EuroStocs_Automation_Pipeline.git'
+        git 'https://github.com/gtlniravpatel/EuroStocs_Automation_Pipeline.git'
       }
     }
 
