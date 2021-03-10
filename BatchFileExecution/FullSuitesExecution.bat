@@ -1,3 +1,3 @@
 @echo off
 timeout 10
-mvn test-compile gauge:execute
+cd /D D:\IDEA\AutoEuroStocks & mvn test-compile gauge:execute

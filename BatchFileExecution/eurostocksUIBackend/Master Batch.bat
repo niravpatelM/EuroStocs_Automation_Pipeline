@@ -1,0 +1,6 @@
+cmd /c "euroStocksAddProductBackend_1586.bat"
+cmd /c "euroStocksAddVehicleBackend_1587.bat"
+cmd /c "euroStocksRemarketingPortalForProductsBackend_1589.bat"
+cmd /c "euroStocksRemarketingPortalForVehiclesBackend_1590.bat"
+cmd /c "euroStocksSearchingBackend_1588.bat"
+cmd /c "euroStocksSortingBackend_1588.bat"

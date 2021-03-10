@@ -56,7 +56,7 @@ public class EuroStocksRegisterLoginForgot_Steplmpl extends EuroStocksTest imple
 
     @Step("Click on link for Login User for dealer website")
     public void clickOnLinkForLoginUserDealer() {
-        Utils.pause(5000,"wait to element load on page");
+        Utils.pause(2000,"wait to element load on page");
         testBase.waitForElementVisibleXpath(waitTime, navigation_menu);
         testBase.getdriver().findElement(By.xpath(navigation_menu)).click();
         testBase.waitForElementVisibleXpath(waitTime, user_icon);

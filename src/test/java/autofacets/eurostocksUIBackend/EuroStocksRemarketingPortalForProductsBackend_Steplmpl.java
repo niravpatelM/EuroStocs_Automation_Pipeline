@@ -43,12 +43,12 @@ public class EuroStocksRemarketingPortalForProductsBackend_Steplmpl extends Euro
 
     @Step("Update product status with any one product from the list and verify status updated")
     public void updateStatusAndVerify() {
-        String product_name = testBase.getdriver().findElement(By.xpath("//tbody/tr[4]/td[3]")).getText();
+        String product_name = testBase.getdriver().findElement(By.xpath("//tbody/tr[3]/td[3]")).getText();
         System.out.println(product_name);
-        WebElement webElementtitle = testBase.getdriver().findElement(By.xpath("//tbody/tr[4]/td[6]"));
+        WebElement webElementtitle = testBase.getdriver().findElement(By.xpath("//tbody/tr[3]/td[6]"));
         String title = webElementtitle.getAttribute("title");
         System.out.println(title);
-        WebElement webElement = testBase.getdriver().findElement(By.xpath("//tbody/tr[4]/td[1]/div/input"));
+        WebElement webElement = testBase.getdriver().findElement(By.xpath("//tbody/tr[3]/td[1]/div/input"));
         String get_id = webElement.getAttribute("id");
         System.out.println(get_id);
         testBase.scrollDownPageToElement(100,testBase.getdriver().findElement(By.xpath("//input[@id='" + get_id + "']")));
@@ -56,10 +56,10 @@ public class EuroStocksRemarketingPortalForProductsBackend_Steplmpl extends Euro
         testBase.scrollDownPageToElement(100,testBase.getdriver().findElement(By.xpath(uitvoeren_btn)));
         testBase.getdriver().findElement(By.xpath(uitvoeren_btn)).click();
         Utils.pause(5000, "wait for element load on the page");
-        WebElement webElementtitleupdate = testBase.getdriver().findElement(By.xpath("//tbody/tr[4]/td[6]"));
+        WebElement webElementtitleupdate = testBase.getdriver().findElement(By.xpath("//tbody/tr[3]/td[6]"));
         String title_update = webElementtitleupdate.getAttribute("title");
         System.out.println(title_update);
-        String verifyUpdatedXpath = "//tbody/tr[4]/td[6][@title='"+title_update+"']";
+        String verifyUpdatedXpath = "//tbody/tr[3]/td[6][@title='"+title_update+"']";
         testBase.verifyElementPresence(verifyUpdatedXpath);
         Gauge.captureScreenshot();
     }
