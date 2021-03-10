@@ -1,0 +1,29 @@
+@author niravpatel
+Created by nirav.patel on 23-12-2020
+
+This is a concept file with following syntax for each concept.
+
+# Setup and launch browser
+
+* Setup and launch browser "Chrome"
+
+# Setup and launch browser with Dealer site
+
+* Setup and launch browser "Chrome" "dealer"
+
+# Setup and launch browser with Backend
+
+* Setup and launch browser "Chrome" "backend"
+
+# Setup the launch browser using Firefox
+
+* Setup and launch browser "Firefox"
+
+# Setup the launch browser using IE
+
+* Setup and launch browser "IE"
+
+# Quit browser
+
+* calling me to quit
+

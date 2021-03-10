@@ -1,0 +1,1 @@
+mvn test-compile gauge:execute -DspecsDir=specs\directautosUI\directAutosLogin_1748.spec
