@@ -1,7 +1,6 @@
 pipeline {
   agent {
 		label 'Windows_Node'
-		label 'master'
 	} 
   stages {
     stage('Chekout') {
