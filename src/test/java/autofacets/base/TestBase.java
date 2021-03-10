@@ -76,15 +76,16 @@ public class TestBase extends WebDriverTestBase {
             } else if (browser.equalsIgnoreCase("chrome")) {
                 System.setProperty("webdriver.chrome.driver",
                         propertyManager.getResourceBundle.getProperty("CHROME_DRIVER_PATH_WIN"));
-                //DesiredCapabilities caps = new DesiredCapabilities();
+                DesiredCapabilities caps = new DesiredCapabilities();
                 //caps.setCapability("resolution", "1600x900");
-                //ChromeOptions options = new ChromeOptions();
-                //options.addArguments("headless");
-                //options.addArguments("window-size=1920x1080");
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("headless");
+                options.addArguments("window-size=1920x1080");
                 //options.addArguments("window-size=1936x1056");
                 //options.addArguments("window-size=1600x900");
                 //options.addArguments("--incognito");
-                driver = new ChromeDriver();
+                //driver = new ChromeDriver();
+                driver = new ChromeDriver(options);
                 openURL(URL);
             } else if (browser.equalsIgnoreCase("headless_chrome")) {
                 System.setProperty("webdriver.chrome.driver",
