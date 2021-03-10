@@ -15,8 +15,8 @@ pipeline {
         label "master"
       }
       steps {
-        echo "euroStocksAddVehicleBackend_1587 Execution Started!!"
-        bat 'euroStocksAddVehicleBackend_1587.bat'
+        echo "directAutosLogin_1748  Execution Started!!"
+        bat 'directAutosLogin_1748.bat'
       }
     }
 
